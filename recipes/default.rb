@@ -64,6 +64,13 @@ template config_file do
   mode 00644
 end
 
+file ::File.join(path, 'etc', 'motd') do
+  owner node['subrosa']['user']
+  group node['subrosa']['group']
+  content node['subrosa']['motd']
+  action :create
+end
+
 runit_service "subrosa" do
   subscribes :restart, resources( :template => config_file )
 end

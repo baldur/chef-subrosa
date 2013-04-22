@@ -9,7 +9,7 @@ default['subrosa']['host'] = 'localhost'
 default['subrosa']['network'] = 'Subrosa'
 default['subrosa']['ssl'] = false
 default['subrosa']['password'] = nil
-default['subrosa']['fs-logging']['directory'] = '/opt/subrosa/log'
+default['subrosa']['fs-logging']['directory'] = 'log'
 default['subrosa']['motd'] = <<-MOTD
 
 .d8888. db    db d8888b. d8888b.  .d88b.  .d8888.  .d8b.

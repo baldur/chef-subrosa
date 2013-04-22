@@ -1,6 +1,6 @@
 default['subrosa']['tarball'] = "#{Chef::Config[:file_cache_path]}/subrosa.tgz"
 default['subrosa']['source'] = 'https://github.com/danlarkin/subrosa'
-default['subrosa']['branch'] = "0.8-stable"
+default['subrosa']['branch'] = '0.8-stable'
 default['subrosa']['path'] = '/opt/subrosa'
 default['subrosa']['user'] = 'nobody'
 default['subrosa']['group'] = 'nogroup'
